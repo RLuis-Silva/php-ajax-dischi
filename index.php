@@ -3,7 +3,6 @@
     include __DIR__ . '/partials/database.php';
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,16 +21,23 @@
 
     <main>
         <div class="container">
-            <div class="box-disco">
-                img
-                <h4>titolo canzone</h4>
-                <div>cantante</div>
-                <div>anno disco</div>
-                <div>genere musica</div>
-            </div>
-
-            
-        </div>
+            <!-- per ottenere i dati dal database, occorre fare un ciclo foreach! -->
+            <?php 
+                foreach( $database as $data_cd ){ ?>
+                    <!-- faccio una stampa di prova degli elementi dell'array
+                    dovrei ottenere una array di cd con le parole chiavi..
+                    var_dump($data_cd); -->
+                    <div class="box-disco">
+                        <div class="cd">
+                            <img src=" <?php echo $data_cd['poster']; ?> " alt="immagine poster del cd">
+                            <h4> <?php echo $data_cd['title']; ?> </h4>
+                            <div> <?php echo $data_cd['author']; ?> </div>
+                            <div> <?php echo $data_cd['year']; ?> </div>
+                            <div> <?php echo $data_cd['genre']; ?> </div>
+                        </div>
+                    </div>    
+        <?php } ?>
+    </div>
     </main>
 </body>
 </html>
