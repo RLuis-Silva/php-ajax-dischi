@@ -25,16 +25,16 @@
             <?php 
                 foreach( $database as $data_cd ){ ?>
                     <!-- faccio una stampa di prova degli elementi dell'array
-                    dovrei ottenere una array di cd con le parole chiavi..
-                    var_dump($data_cd); -->
+                    dovrei ottenere una array di cd con le parole chiavi.. -->
+                    <!-- var_dump($data_cd);  -->
                     <div class="box-disco">
-                        <div class="cd">
-                            <img src=" <?php echo $data_cd['poster']; ?> " alt="immagine poster del cd">
-                            <h4> <?php echo $data_cd['title']; ?> </h4>
-                            <div> <?php echo $data_cd['author']; ?> </div>
-                            <div> <?php echo $data_cd['year']; ?> </div>
-                            <div> <?php echo $data_cd['genre']; ?> </div>
-                        </div>
+                        
+                        <img src=" <?php echo $data_cd['poster']; ?> " alt="immagine poster del cd">
+                        <h4> <?php echo $data_cd['title']; ?> </h4>
+                        <small> <?php echo $data_cd['author']; ?> </small>
+                        <div> <?php echo $data_cd['year']; ?> </div>
+                        <small> <?php echo $data_cd['genre']; ?> </small>
+                        
                     </div>    
         <?php } ?>
     </div>
