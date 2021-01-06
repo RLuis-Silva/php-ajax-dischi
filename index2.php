@@ -17,19 +17,13 @@
     <main>
         <div class="container">
             <!-- per ottenere i dati dal database, occorre fare un ciclo foreach! -->
-            <?php 
-                foreach( $database as $data_cd ){ ?>
-                    <!-- faccio una stampa di prova degli elementi dell'array
-                    dovrei ottenere una array di cd con le parole chiavi.. -->
-                    <!-- var_dump($data_cd);  -->
-                    <div class="box-disco">
-                        <img src=" <?php echo $data_cd['poster']; ?> " alt="immagine poster del cd">
-                        <h4> <?php echo $data_cd['title']; ?> </h4>
-                        <small> <?php echo $data_cd['author']; ?> </small>
-                        <div> <?php echo $data_cd['year']; ?> </div>
-                        <small> <?php echo $data_cd['genre']; ?> </small>   
-                    </div>    
-            <?php } ?>
+            <div class="box-disco">
+                <img src="  " alt="immagine poster del cd">
+                <h4> titolo </h4>
+                <small> autore </small>
+                <div> anno </div>
+                <small> genere </small>   
+            </div>    
         </div>
     </main>
 
@@ -37,7 +31,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <!-- link Axios cdn -->
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
     <!-- link file JS -->
     <script src="./js/main.js" ></script>
 </body>
