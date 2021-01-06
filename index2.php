@@ -33,6 +33,11 @@
         </div>
     </main>
 
+    <!-- link Vue.js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- link Axios cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!-- link file JS -->
     <script src="./js/main.js" ></script>
 </body>
