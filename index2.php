@@ -17,13 +17,12 @@
 
         <main>
             <div class="container">
-                <!-- per ottenere i dati dal database, occorre fare un ciclo foreach! -->
-                <div class="box-disco">
-                    <img src="  " alt="immagine poster del cd">
-                    <h4> titolo </h4>
-                    <small> autore </small>
-                    <div> anno </div>
-                    <small> genere </small>   
+                <div v-for="album in albums" class="box-disco">
+                    <img :src=" album.poster " alt="immagine poster del cd">
+                    <h4> {{album.title}} </h4>
+                    <small> {{album.author}} </small>
+                    <div> {{album.year}} </div>
+                    <small> {{album.genre}} </small>   
                 </div>    
             </div>
         </main>
