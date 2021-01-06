@@ -8,7 +8,7 @@
     <title>Milestone 2</title>
 </head>
 <body>
-    <div class="app">
+    <div id ="app">
         <header>
             <div class="container">
                 <img src="./img/logo.png" alt="logo spotify">
