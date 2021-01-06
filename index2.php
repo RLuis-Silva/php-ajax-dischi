@@ -12,8 +12,8 @@
         <header>
             <div class="container">
                 <img src="./img/logo.png" alt="logo spotify">
-                <select v-mode="filterArtists">
-                    <option value="all">Tutti</option>
+                <select v-mode="filterArtist" @change="getFiltered">
+                    <option value="all">Tutti </option>
                     <!-- creo altri option in modo dinamico! -->
                     <option v-for="artist in artists" :value="artist">
                         {{artist}}
