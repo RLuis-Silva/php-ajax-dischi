@@ -32,5 +32,8 @@
             <?php } ?>
         </div>
     </main>
+
+    <!-- link file JS -->
+    <script src="./js/main.js" ></script>
 </body>
 </html>
